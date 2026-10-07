@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SV FLOWERS — Квіти твого міста. Букети, кімнатні рослини, композиції, горщики, аромадифузори та свічки.">
+  <title>SV FLOWERS — Квіти твого міста</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="SV FLOWERS"><span class="brand-mark">SV</span><span class="brand-name">FLOWERS</span></a>
+    <button class="menu-button" type="button" aria-label="Відкрити меню" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#about">Про нас</a><a href="#catalog">Каталог</a><a href="#delivery">Доставка</a><a href="#contacts">Контакти</a>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <img class="hero-flower hero-flower-left" src="assets/blue-flower-branch.jpg" alt="" aria-hidden="true">
+      <img class="hero-flower hero-flower-right" src="assets/blue-flower-branch.jpg" alt="" aria-hidden="true">
+      <img class="hero-hydrangea hero-hydrangea-left" src="assets/white-hydrangea.jpg" alt="" aria-hidden="true">
+      <img class="hero-hydrangea hero-hydrangea-right" src="assets/white-hydrangea.jpg" alt="" aria-hidden="true">
+      <div class="hero-content">
+        <div class="logo-large"><span>SV</span><small>FLOWERS</small></div>
+        <p class="eyebrow">КВІТИ ТВОГО МІСТА</p><h1>Квіти твого міста</h1>
+        <p class="hero-script">букети, квіткові композиції, кімнатні рослини,<br>добрива, горщики, листівки, аромадифузори, свічки</p>
+        <a class="button" href="#catalog">Переглянути каталог</a>
+      </div>
+    </section>
+    <section class="info-section" id="about">
+      <div class="section-heading"><span class="eyebrow">Information</span><h2>Все для квітів та затишку</h2></div>
+      <div class="info-grid">
+        <article><span class="icon">⌖</span><h3>Адреса</h3><p>пр-т. Володимирський, 4/3, Лубни</p></article>
+        <article><span class="icon">◷</span><h3>Графік роботи</h3><p>понеділок — неділя 9:00 — 20:00</p></article>
+        <article>
+  <span class="icon">☎</span>
+  <h3>Контакти</h3>
+
+  <div class="phone-copy">
+    <a href="tel:+380681839999">068 183 9999</a>
+    <button type="button" class="copy-phone" data-phone="+380681839999">
+      Скопіювати
+    </button>
+  </div>
+
+  <p>@sv_flowers_lubny</p>
+</article>
+        <article id="delivery"><span class="icon">✿</span><h3>Доставка</h3><p>Доставляємо по місту та за його межі. Безкоштовна доставка по місту — від 2500 грн.</p></article>
+      </div>
+    </section>
+    <section class="catalog" id="catalog">
+      <div class="section-heading centered"><span class="eyebrow">SV FLOWERS</span><h2>Наш каталог</h2><p>Оберіть категорію, щоб переглянути асортимент.</p></div>
+      <div class="category-nav" id="categoryNav">
+        <button type="button" data-target="bouquets">Букети</button>
+        <button type="button" data-target="plants">Кімнатні рослини</button>
+        <button type="button" data-target="compositions">Квіткові композиції</button>
+        <button type="button" data-target="pots">Горщики</button>
+        <button type="button" data-target="diffusers">Аромадифузори</button>
+        <button type="button" data-target="candles">Свічки</button>
+      </div>
+      <div id="catalogSections">
+        <section class="catalog-section" id="bouquets">
+          <div class="catalog-title">
+            <button class="catalog-title-toggle" type="button" aria-expanded="true">
+              <span class="catalog-title-text">
+                <span class="catalog-title-name">Букети</span>
+                <span class="catalog-title-subtitle">самовивіз та доставка</span>
+              </span>
+              <span class="catalog-title-icon" aria-hidden="true">−</span>
+            </button>
+          </div>
+          <div class="product-grid" aria-hidden="false">
+          <article class="product-card">
+            <img src="assets/products/bouquets_01.jpg" alt="Букет №01" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №01</span>
+              <span class="product-price">790 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_02.jpg" alt="Букет №02" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №02</span>
+              <span class="product-price">1 050 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_03.jpg" alt="Букет №03" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №03</span>
+              <span class="product-price">230 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_04.jpg" alt="Букет №04" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №04</span>
+              <span class="product-price">2 760 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_05.jpg" alt="Букет №05" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №05</span>
+              <span class="product-price">1 300 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_06.jpg" alt="Букет №06" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №06</span>
+              <span class="product-price">940 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_07.jpg" alt="Букет №07" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №07</span>
+              <span class="product-price">1 590 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_08.jpg" alt="Букет №08" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №08</span>
+              <span class="product-price">990 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_09.jpg" alt="Букет №09" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №09</span>
+              <span class="product-price">785 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_10.jpg" alt="Букет №10" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №10</span>
+              <span class="product-price">975 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_11.jpg" alt="Букет №11" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №11</span>
+              <span class="product-price">710 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_12.jpg" alt="Букет №12" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №12</span>
+              <span class="product-price">970 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_13.jpg" alt="Букет №13" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №13</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_14.jpg" alt="Букет №14" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №14</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_15.jpg" alt="Букет №15" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №15</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_16.jpg" alt="Букет №16" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №16</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_17.jpg" alt="Букет №17" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №17</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_18.jpg" alt="Букет №18" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №18</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_19.jpg" alt="Букет №19" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №19</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_20.jpg" alt="Букет №20" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №20</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_21.jpg" alt="Букет №21" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №21</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_22.jpg" alt="Букет №22" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №22</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/bouquets_23.jpg" alt="Букет №23" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Букет №23</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          </div>
+        </section>
+        <section class="catalog-section" id="plants">
+          <div class="catalog-title">
+            <button class="catalog-title-toggle" type="button" aria-expanded="true">
+              <span class="catalog-title-text">
+                <span class="catalog-title-name">Кімнатні рослини</span>
+                <span class="catalog-title-subtitle">квітучі та зелені</span>
+              </span>
+              <span class="catalog-title-icon" aria-hidden="true">−</span>
+            </button>
+          </div>
+          <div class="product-grid" aria-hidden="false">
+          <article class="product-card">
+            <img src="assets/products/plants_01.jpg" alt="Кімнатна рослина №01" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №01</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_02.jpg" alt="Кімнатна рослина №02" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №02</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_03.jpg" alt="Кімнатна рослина №03" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №03</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_04.jpg" alt="Кімнатна рослина №04" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №04</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_05.jpg" alt="Кімнатна рослина №05" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №05</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_06.jpg" alt="Кімнатна рослина №06" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №06</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_07.jpg" alt="Кімнатна рослина №07" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №07</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_08.jpg" alt="Кімнатна рослина №08" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №08</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_09.jpg" alt="Кімнатна рослина №09" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №09</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_10.jpg" alt="Кімнатна рослина №10" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №10</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_11.jpg" alt="Кімнатна рослина №11" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №11</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_12.jpg" alt="Кімнатна рослина №12" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №12</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_13.jpg" alt="Кімнатна рослина №13" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №13</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_14.jpg" alt="Кімнатна рослина №14" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №14</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_15.jpg" alt="Кімнатна рослина №15" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №15</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_16.jpg" alt="Кімнатна рослина №16" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №16</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_17.jpg" alt="Кімнатна рослина №17" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №17</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_18.jpg" alt="Кімнатна рослина №18" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №18</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_19.jpg" alt="Кімнатна рослина №19" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №19</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/plants_20.jpg" alt="Кімнатна рослина №20" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Кімнатна рослина №20</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          </div>
+        </section>
+        <section class="catalog-section" id="compositions">
+          <div class="catalog-title">
+            <button class="catalog-title-toggle" type="button" aria-expanded="true">
+              <span class="catalog-title-text">
+                <span class="catalog-title-name">Квіткові композиції</span>
+                <span class="catalog-title-subtitle">в кошику та коробці</span>
+              </span>
+              <span class="catalog-title-icon" aria-hidden="true">−</span>
+            </button>
+          </div>
+          <div class="product-grid" aria-hidden="false">
+
+          </div>
+        </section>
+        <section class="catalog-section" id="pots">
+          <div class="catalog-title">
+            <button class="catalog-title-toggle" type="button" aria-expanded="true">
+              <span class="catalog-title-text">
+                <span class="catalog-title-name">Горщики</span>
+                <span class="catalog-title-subtitle">для ваших рослин</span>
+              </span>
+              <span class="catalog-title-icon" aria-hidden="true">−</span>
+            </button>
+          </div>
+          <div class="product-grid" aria-hidden="false">
+          <article class="product-card">
+            <img src="assets/products/pots_01.jpg" alt="Горщик №01" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Горщик №01</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/pots_02.jpg" alt="Горщик №02" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Горщик №02</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/pots_03.jpg" alt="Горщик №03" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Горщик №03</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/pots_04.jpg" alt="Горщик №04" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Горщик №04</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/pots_05.jpg" alt="Горщик №05" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Горщик №05</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/pots_06.jpg" alt="Горщик №06" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Горщик №06</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/pots_07.jpg" alt="Горщик №07" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Горщик №07</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/pots_08.jpg" alt="Горщик №08" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Горщик №08</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/pots_09.jpg" alt="Горщик №09" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Горщик №09</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/pots_10.jpg" alt="Горщик №10" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Горщик №10</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/pots_11.jpg" alt="Горщик №11" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Горщик №11</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/pots_12.jpg" alt="Горщик №12" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Горщик №12</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          </div>
+        </section>
+        <section class="catalog-section" id="diffusers">
+          <div class="catalog-title">
+            <button class="catalog-title-toggle" type="button" aria-expanded="true">
+              <span class="catalog-title-text">
+                <span class="catalog-title-name">Аромадифузори</span>
+                <span class="catalog-title-subtitle">аромати для дому</span>
+              </span>
+              <span class="catalog-title-icon" aria-hidden="true">−</span>
+            </button>
+          </div>
+          <div class="product-grid" aria-hidden="false">
+          <article class="product-card">
+            <img src="assets/products/diffusers_01.jpg" alt="Аромадифузор №01" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Аромадифузор №01</span>
+              <span class="product-price">290 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/diffusers_02.jpg" alt="Аромадифузор №02" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Аромадифузор №02</span>
+              <span class="product-price">290 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/diffusers_03.jpg" alt="Аромадифузор №03" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Аромадифузор №03</span>
+              <span class="product-price">290 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/diffusers_04.jpg" alt="Аромадифузор №04" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Аромадифузор №04</span>
+              <span class="product-price">290 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/diffusers_05.jpg" alt="Аромадифузор №05" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Аромадифузор №05</span>
+              <span class="product-price">450 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/diffusers_06.jpg" alt="Аромадифузор №06" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Аромадифузор №06</span>
+              <span class="product-price">450 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/diffusers_07.jpg" alt="Аромадифузор №07" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Аромадифузор №07</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/diffusers_08.jpg" alt="Аромадифузор №08" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Аромадифузор №08</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          </div>
+        </section>
+        <section class="catalog-section" id="candles">
+          <div class="catalog-title">
+            <button class="catalog-title-toggle" type="button" aria-expanded="true">
+              <span class="catalog-title-text">
+                <span class="catalog-title-name">Свічки</span>
+                <span class="catalog-title-subtitle">затишок та аромат</span>
+              </span>
+              <span class="catalog-title-icon" aria-hidden="true">−</span>
+            </button>
+          </div>
+          <div class="product-grid" aria-hidden="false">
+          <article class="product-card">
+            <img src="assets/products/candles_01.jpg" alt="Свічка №01" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Свічка №01</span>
+              <span class="product-price">460 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/candles_02.jpg" alt="Свічка №02" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Свічка №02</span>
+              <span class="product-price">460 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/candles_03.jpg" alt="Свічка №03" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Свічка №03</span>
+              <span class="product-price">460 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/candles_04.jpg" alt="Свічка №04" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Свічка №04</span>
+              <span class="product-price">460 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/candles_05.jpg" alt="Свічка №05" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Свічка №05</span>
+              <span class="product-price">355 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/candles_06.jpg" alt="Свічка №06" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Свічка №06</span>
+              <span class="product-price">355 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/candles_07.jpg" alt="Свічка №07" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Свічка №07</span>
+              <span class="product-price">355 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/candles_08.jpg" alt="Свічка №08" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Свічка №08</span>
+              <span class="product-price">355 грн</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/candles_09.jpg" alt="Свічка №09" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Свічка №09</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/candles_10.jpg" alt="Свічка №10" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Свічка №10</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/candles_11.jpg" alt="Свічка №11" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Свічка №11</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/candles_12.jpg" alt="Свічка №12" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Свічка №12</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="assets/products/candles_13.jpg" alt="Свічка №13" loading="lazy">
+            <div class="product-meta">
+              <span class="product-name">Свічка №13</span>
+              <span class="no-price">уточнюйте</span>
+            </div>
+          </article>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer id="contacts">
+    <div class="footer-brand"><div class="logo-large"><span>SV</span><small>FLOWERS</small></div><p>Квіти твого міста</p></div>
+    <div><h3>Контакти</h3><p>пр-т. Володимирський, 4/3, Лубни</p><p>
+  <a href="tel:+380681839999">068 183 9999</a>
+</p><p>@sv_flowers_lubny</p></div>
+    <div><h3>Графік</h3><p>понеділок — неділя 9:00 — 20:00</p></div>
+    <div><h3>Доставка</h3><p>Доставляємо по місту та за його межі. Безкоштовна доставка по місту — від 2500 грн.</p></div>
+  </footer>
+  <div class="copyright">SV FLOWERS · Квіти твого міста</div>
+  <script src="script.js"></script>
+</body>
+</html>
