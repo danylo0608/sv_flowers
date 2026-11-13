@@ -537,6 +537,26 @@
     <div><h3>Доставка</h3><p>Доставляємо по місту та за його межі. Безкоштовна доставка по місту — від 2500 грн.</p></div>
   </footer>
   <div class="copyright">SV FLOWERS · Квіти твого міста</div>
+
+  <!-- Модальне вікно товару -->
+  <div class="product-modal" id="productModal" aria-hidden="true">
+    <div class="product-modal-backdrop" data-close-modal></div>
+    <div class="product-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalProductName">
+      <button class="product-modal-close" type="button" aria-label="Закрити" data-close-modal>×</button>
+      <img class="product-modal-image" id="modalProductImage" src="" alt="">
+      <div class="product-modal-info">
+        <h2 id="modalProductName"></h2>
+        <p class="product-modal-price" id="modalProductPrice"></p>
+        <button class="button product-order-button" id="productOrderButton" type="button">Замовити</button>
+        <div class="product-order-contacts" id="productOrderContacts" hidden>
+          <p>Зв’яжіться з нами зручним способом:</p>
+          <a class="order-contact-link" href="https://www.instagram.com/sv_flowers_lubny/" target="_blank" rel="noopener">Instagram: @sv_flowers_lubny</a>
+          <a class="order-contact-link telegram-contact" id="telegramOrderLink" href="#">Telegram: посилання уточнюється</a>
+          <a class="order-contact-link" href="tel:+380681839999">Телефон: 068 183 9999</a>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

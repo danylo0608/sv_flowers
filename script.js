@@ -182,4 +182,82 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
+
+  // ==========================================
+  // ПЕРЕГЛЯД ТОВАРУ ТА ЗАМОВЛЕННЯ
+  // ==========================================
+
+  const productModal = document.querySelector("#productModal");
+  const modalImage = document.querySelector("#modalProductImage");
+  const modalName = document.querySelector("#modalProductName");
+  const modalPrice = document.querySelector("#modalProductPrice");
+  const orderButton = document.querySelector("#productOrderButton");
+  const orderContacts = document.querySelector("#productOrderContacts");
+  const telegramLink = document.querySelector("#telegramOrderLink");
+
+  // Вкажіть тут справжнє посилання на Telegram магазину.
+  // Наприклад: https://t.me/назва_акаунта
+  const TELEGRAM_URL = "";
+
+  if (TELEGRAM_URL && telegramLink) {
+    telegramLink.href = TELEGRAM_URL;
+    telegramLink.target = "_blank";
+    telegramLink.rel = "noopener";
+    telegramLink.textContent = "Telegram: написати нам";
+    telegramLink.classList.remove("is-unavailable");
+  } else if (telegramLink) {
+    telegramLink.removeAttribute("href");
+    telegramLink.classList.add("is-unavailable");
+  }
+
+  function closeProductModal() {
+    if (!productModal) return;
+
+    productModal.classList.remove("is-open");
+    productModal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+    orderContacts.hidden = true;
+    orderButton.textContent = "Замовити";
+  }
+
+  document.querySelectorAll(".product-card img").forEach(image => {
+    image.addEventListener("click", () => {
+      const card = image.closest(".product-card");
+      if (!card || !productModal) return;
+
+      const name = card.querySelector(".product-name");
+      const price = card.querySelector(".product-price");
+
+      modalImage.src = image.src;
+      modalImage.alt = image.alt;
+      modalName.textContent = name ? name.textContent.trim() : image.alt;
+      modalPrice.textContent = price ? price.textContent.trim() : "";
+
+      orderContacts.hidden = true;
+      orderButton.textContent = "Замовити";
+      productModal.classList.add("is-open");
+      productModal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("modal-open");
+    });
+  });
+
+  if (orderButton) {
+    orderButton.addEventListener("click", () => {
+      orderContacts.hidden = !orderContacts.hidden;
+      orderButton.textContent = orderContacts.hidden ? "Замовити" : "Приховати контакти";
+    });
+  }
+
+  if (productModal) {
+    productModal.querySelectorAll("[data-close-modal]").forEach(element => {
+      element.addEventListener("click", closeProductModal);
+    });
+  }
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && productModal && productModal.classList.contains("is-open")) {
+      closeProductModal();
+    }
+  });
+
 });
